@@ -126,7 +126,7 @@ const elementResize = (index: number, element: HTMLElement) => {
   let isInPaddingRange = false
   if (cur === pre) return
 
-  // 如果高度变化的元素不在视口内，则将offset加上高度变化量
+  // 判断高度变化的元素是否在预加载区间
   let offset = startPosition.value[1]
   let itemIndex = startPosition.value[0]
   let height = getHeight(itemIndex)

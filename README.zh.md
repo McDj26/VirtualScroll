@@ -104,7 +104,7 @@ type VirtualScrollItem = {
 
 |    方法     |                 参数                 |     返回值类型     |       描述       |
 | :---------: | :----------------------------------: | :----------------: | :--------------: |
-|   scroll    |           `delta: number`            |         -          |   滚动指定长度   |
+|   scroll    | `delta: number`, `duration?: number` |         -          |   滚动指定距离   |
 |  transport  | `newStartPosition: [number, number]` |         -          |  传送到指定位置  |
 | getPosition |                  -                   | `[number, number]` | 获取列表当前位置 |
 
@@ -168,4 +168,4 @@ items.unshift({
 
 ### 仅在触屏设备上使用
 
-虽然列表支持滚轮滚动，但是**暂不支持**滚动条，在PC等非触屏设备上应考虑使用分页实现类似效果
+虽然列表支持滚轮滚动，但是**暂不支持**滚动条，在PC等非触屏设备上应考虑使用分页

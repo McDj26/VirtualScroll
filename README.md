@@ -104,7 +104,7 @@ type VirtualScrollItem = {
 
 | Method      | Parameters                           | Return Type        | Description                          |
 | :---------- | :----------------------------------- | :----------------- | :----------------------------------- |
-| scroll      | `delta: number`                      | -                  | Scroll a specific length             |
+| scroll      | `delta: number`, `duration?: number` | -                  | Scroll a specific length             |
 | transport   | `newStartPosition: [number, number]` | -                  | Transport to a specified position    |
 | getPosition | -                                    | `[number, number]` | Get the current position of the list |
 
@@ -170,4 +170,4 @@ Specifically, do not modify the height of elements near the start direction of t
 
 ### Use Only on Touchscreen Devices
 
-While the list supports wheel scrolling, it **does not support** scrollbars. On PCs and other non-touchscreen devices, consider using pagination to achieve similar effects.
+While the list supports wheel scrolling, it **does not support** scrollbars. On PCs and other non-touchscreen devices, consider using pagination.
